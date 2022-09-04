@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+picture{
+    max-width:100%;
+}
+.fondo{
+    display:none
+}
+.fondo-desktop{
+    width: 600px;
+    height: 600px;
+    left: 24px;
+    top: 21px;
+    margin:36px;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: -375px;
+    margin-left: 865px;
+}
+.logo{
+    position: absolute;
+    width: 294px;
+    height: 360px;
+    left: 365px;
+    top: -28px;
+}
+.container-opcion{
+	width:300px;
+	height:70px;
+    display:flex;
+    gap: inherit;
+    justify-content: center;
+    align-items: center;
+	background: #FFFDFD;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(126, 120, 120, 0.25);
+    border-radius: 20px;
+}
+.container-opcion img{
+    max-width: 100%;
+    width: 45px;
+}
+.container-opcion .ico{
+    width:30px;
+}
+@media screen and (min-width:992px){
+    .marco{
+        position: absolute;
+        z-index: 4;
+        width: 705px;
+        height: 469px;
+        left: 105px;
+        top: 0px;
+    }
+    .logo{
+        position: absolute;
+        width: 225px;
+        height: 225px;
+        left: 410px;
+        top: 85px;
+        max-width: 100%;
+    }
+    #opcion1, #opcion2, #opcion3{
+        width:335px;
+        height:70px;
+        left: 370px;
+    }
+    #opcion1{
+        top: 315px;
+    }
+    #opcion2{
+        top: 415px;
+    }
+    #opcion3{
+        top: 515px;
+    }
+    .txt1, .txtGoogle, .txtFacebook{
+        left:75px;
+    }
+    .ico_registro, .ico_google, .ico_facebook{
+        left:35px;
+    }
+}
+@media screen and (min-width:768px){
+    .fondo{
+        display:none;
+    }
+    .fondo-desktop{
+        display: block;
+        margin-left: 22px;
+        margin-top: 50px;
+        width: 460px;
+        height: 595px;
+        border-radius: 40px;
+    }
+    .logo{
+        display: flex;
+        margin-left: 140px;
+    }
+    .container{
+        margin-left: 536px;
+        margin-top: -336px;
+    }
+    .container-opcion{
+        width: 218px;
+        height: 54px;
+    }
+    .container-opcion .ico{
+        width: 18px;
+        margin:16px;
+    }
+    .container-opcion p{
+        font-size: 12px;
+    }
+    .container-opcion .registro{
+        margin-left: -40px;
+    }
+    .container-opcion .txtRegistro{
+        margin-right:9px;
+    }
+}
+@media screen and (max-width:425px){
+    .fondo-desktop{
+        display:none;
+    }
+    .fondo{
+        display:block;
+        margin-left: 48px;
+        margin-top: 22px;
+        width: 330px;
+        height: 230px;
+        border-radius: 40px;
+    }
+    .logo{
+        width: 140px;
+        height: 140px;
+        left: 140px;
+        top: 252px;
+        max-width: 100%;
+    }
+    .container{
+        margin-top: 145px;
+        margin-left: 90px;
+        gap: 8px;
+    }
+    .container-opcion{
+        width: 218px;
+        height: 54px;
+    }
+    .container-opcion .ico{
+        width: 18px;
+        margin:16px;
+    }
+    .container-opcion p{
+        font-size: 12px;
+    }
+    .container-opcion .registro{
+        margin-left: -40px;
+    }
+    .container-opcion .txtRegistro{
+        margin-right:9px;
+    }
+}
+@media screen and (max-width:376px){
+    .fondo-desktop{
+        display:none;
+    }
+    .fondo{
+        display:block;
+        margin-left: 22px;
+        margin-top: 22px;
+        width: 330px;
+        height: 230px;
+        border-radius: 40px;
+    }
+    .logo{
+        width: 140px;
+        height: 140px;
+        left: 114px;
+        top: 252px;
+        max-width: 100%;
+    }
+    .container{
+        margin-top: 145px;
+        margin-left: 70px;
+        gap: 8px;
+    }
+    .container-opcion{
+        width: 218px;
+        height: 54px;
+    }
+    .container-opcion .ico{
+        width: 18px;
+        margin:16px;
+    }
+    .container-opcion p{
+        font-size: 12px;
+    }
+    .container-opcion .registro{
+        margin-left: -40px;
+    }
+    .container-opcion .txtRegistro{
+        margin-right:9px;
+    }
+
+}
+@media screen and (max-width:320px){
+    .fondo-desktop{
+        display:none;
+    }
+    .fondo{
+        display:block;
+        margin-left: 22px;
+        margin-top: 22px;
+        width: 274px;
+        height: 183px;
+        border-radius: 40px;
+    }
+    .logo{
+        width: 163px;
+        height: 163px;
+        left: 77px;
+        top: 206px;
+        max-width: 100%;
+    }
+    .container{
+        margin-top: 160px;
+        margin-left: 50px;
+        gap: 8px;
+    }
+    .container-opcion{
+        width: 218px;
+        height: 68px;
+    }
+    .container-opcion img{
+        max-width: 100%;
+        width: 35px;
+        margin:20px;
+    }
+    .container-opcion .registro{
+        margin-left: -40px;
+    }
+    .container-opcion .txtRegistro{
+        margin-right:9px;
+    }
+
+}
+
+
