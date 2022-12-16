@@ -1,0 +1,23 @@
+{
+  "name": "Proyecto_Combinacion_Colores",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quiroga10/Proyecto_Combinacion_Colores.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Quiroga10/Proyecto_Combinacion_Colores/issues"
+  },
+  "homepage": "https://github.com/Quiroga10/Proyecto_Combinacion_Colores#readme",
+  "devDependencies": {
+    "sass": "^1.56.2"
+  }
+}
