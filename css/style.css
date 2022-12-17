@@ -1,0 +1,98 @@
+:root {
+  --background-light: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 65.5%;
+}
+
+body {
+  background-color: var(--background-light);
+}
+
+header button {
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  width: 6rem;
+}
+header button span {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+header button .mon {
+  width: 1.9rem;
+}
+
+main {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  place-items: center;
+}
+main .form-container {
+  width: 30rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+main .form-container img {
+  width: 18.5rem;
+  height: 18.5rem;
+  justify-self: center;
+}
+main .form-container form {
+  display: flex;
+  flex-direction: column;
+}
+main .form-container form label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+main .form-container form input {
+  background-color: rgba(247, 247, 247, 0.968627451);
+  border: none;
+  border-radius: 0.8rem;
+  height: 3rem;
+  font-size: 1.6rem;
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+main .form-container form .input-email, main .form-container form .input-password {
+  margin-bottom: 2rem;
+  caret-color: #5BCBCB;
+}
+main .form-container form a {
+  color: #757875;
+  font-size: 1.4rem;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+main .form-container form .primary-button, main .form-container form .secondary-button {
+  background-color: #5BCBCB;
+  border-radius: 0.8rem;
+  box-shadow: 0px 4px 4px rgba(183, 164, 164, 0.25);
+  border: none;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: bold;
+  height: 5rem;
+}
+main .form-container form .secondary-color {
+  background: #CB5B5B;
+}
+main .form-container form .login-button {
+  margin-top: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -5,37 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePaint</title>
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <picture>
-            <img class="fondo" src="./img/fondojpg.jpg" alt="">
-            <!-- <img class="fondo-desktop" src="./img/fondo-deskopt.jpg" alt=""> -->
-        </picture>
         <button class="header__switch" id="switch">
             <span>
                 <img src="img/sun-regular.svg" alt="">
             </span>
-            <span>
+            <span class="mon">
                 <img src="img/moon-solid.svg" alt="">
             </span>
         </button>
     </header>
-    <div class="container">
-        <img class="logo" src="./img/diseno-logo-casa-pintura.jpeg" alt="">
-        <label class="container-opcion" for="Google">
-            <img class="ico" src="./img/google.ico" alt="">
-            <p>Continuar con Google</p>
-        </label>
-        <label class="container-opcion" for="Facebook">
-            <img class="ico" src="./img/facebook_logo_icon_186880.ico" alt="">
-            <p>Continuar con Facebook</p>
-        </label>
-        <label class="container-opcion" for="Registrar">
-            <img class="ico" src="./img/registro.jpeg" alt="">
-            <p>Crear cuenta</p>
-        </label>
-    </div>
+    <main>
+        <div class="form-container">
+            <img src="./img/diseno-logo-casa-pintura.jpeg" alt="">
+            <form class="form" action="#">
+                <label for="email" class="label">Correo</label>
+                <input type="text" id="email"
+                placeholder="Digite su correo" autofocus
+                class="input input-email"/>
+                <label for="password" class="label">Contraseña</label>
+                <input type="password" id="password"
+                placeholder="digite su contraseña"
+                class="input input-password"/>
+                <a href="/">Olvide mi contraseña</a>
+                <input type="submit" value="Iniciar Sesion" class="primary-button login-button"/>
+                <button class="secondary-button secondary-color">
+                    Registrarme
+                </button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
