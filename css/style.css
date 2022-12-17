@@ -8,18 +8,59 @@ html {
   font-size: 65.5%;
 }
 
-header button {
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  transition: 0.3s ease all;
+}
+body.dark {
+  background-color: #032D45;
+  color: white;
+}
+
+header {
+  margin: 2rem 1rem 0 0;
+}
+header .header__switch {
+  background-color: #343d5b;
+  border-radius: 100rem;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  outline: none;
   float: right;
   display: flex;
   justify-content: space-between;
-  width: 6rem;
 }
-header button span {
-  width: 2.6rem;
-  height: 2.6rem;
+header .header__switch::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 10rem;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
 }
-header button .mon {
-  width: 1.9rem;
+header .header__switch.active {
+  background: orange;
+  color: #000;
+}
+header .header__switch.active::after {
+  right: 0;
+  left: unset;
+}
+header .header__switch span {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  display: block;
+  background: none;
+  color: #fff;
 }
 
 main {
@@ -34,9 +75,13 @@ main .form-container {
   grid-template-rows: auto 1fr auto;
 }
 main .form-container img {
-  width: 18.5rem;
-  height: 18.5rem;
+  width: 8.5rem;
+  height: 8.5rem;
   justify-self: center;
+}
+body.dark main .form-container img {
+  background-color: white;
+  border-radius: 40rem;
 }
 main .form-container form {
   display: flex;
@@ -66,6 +111,9 @@ main .form-container form a {
   text-align: center;
   text-decoration: none;
   margin-bottom: 2rem;
+}
+body.dark main .form-container form a:hover {
+  color: white;
 }
 main .form-container form .primary-button, main .form-container form .secondary-button {
   background-color: #5BCBCB;
