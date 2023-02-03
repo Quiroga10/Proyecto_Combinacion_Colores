@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePaint</title>
+    <script src="https://kit.fontawesome.com/9d0ecd6d4d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <button class="header__switch" id="switch">
+        <button class="button-switch" id="switch">
             <span>
                 <i class="fa fa-sun"></i>
             </span>
@@ -25,7 +25,7 @@
             <form class="form" action="#">
                 <label for="email" class="label">Correo</label>
                 <input type="text" id="email"
-                placeholder="Digite su correo" autofocus
+                placeholder="digite su correo" autofocus
                 class="input input-email"/>
                 <label for="password" class="label">Contraseña</label>
                 <input type="password" id="password"
@@ -38,7 +38,17 @@
                 </button>
             </form>
         </div>
+        <div class="redes-container">
+            <a class="redes__whatsapp" href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a class="redes__facebook" href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a><a class="redes__google" href="#">
+                <i class="fa-brands fa-google"></i>
+            </a>
+        </div>
     </main>
-    <script src="js/index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

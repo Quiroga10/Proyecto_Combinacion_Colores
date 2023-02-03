@@ -21,7 +21,7 @@ body.dark {
 header {
   margin: 2rem 1rem 0 0;
 }
-header .header__switch {
+header .button-switch {
   background-color: #343d5b;
   border-radius: 100rem;
   border: none;
@@ -32,7 +32,7 @@ header .header__switch {
   display: flex;
   justify-content: space-between;
 }
-header .header__switch::after {
+header .button-switch::after {
   content: "";
   display: block;
   width: 3rem;
@@ -46,15 +46,15 @@ header .header__switch::after {
   transition: 0.3s ease all;
   box-shadow: 0px 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
 }
-header .header__switch.active {
+header .button-switch.active {
   background: orange;
   color: #000;
 }
-header .header__switch.active::after {
+header .button-switch.active::after {
   right: 0;
   left: unset;
 }
-header .header__switch span {
+header .button-switch span {
   width: 3rem;
   height: 3rem;
   line-height: 3rem;
@@ -133,6 +133,32 @@ main .form-container form .secondary-color {
 main .form-container form .login-button {
   margin-top: 1.4rem;
   margin-bottom: 3rem;
+}
+main .redes-container {
+  display: flex;
+  gap: 2rem;
+}
+main .redes-container .redes__facebook, main .redes-container .redes__whatsapp,
+main .redes-container .redes__google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: white;
+}
+main .redes-container .redes__facebook {
+  background: rgb(85, 139, 168);
+}
+main .redes-container .redes__whatsapp {
+  background: rgb(34, 230, 109);
+}
+main .redes-container .redes__google {
+  background: rgb(231, 81, 27);
 }
 
 /*# sourceMappingURL=style.css.map */
