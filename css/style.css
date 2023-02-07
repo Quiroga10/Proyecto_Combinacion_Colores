@@ -75,8 +75,8 @@ main .form-container {
   grid-template-rows: auto 1fr auto;
 }
 main .form-container img {
-  width: 8.5rem;
-  height: 8.5rem;
+  width: 9.5rem;
+  height: 9.5rem;
   justify-self: center;
 }
 body.dark main .form-container img {

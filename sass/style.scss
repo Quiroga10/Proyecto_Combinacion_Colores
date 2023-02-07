@@ -76,8 +76,8 @@ main{
         display:grid;
         grid-template-rows: auto 1fr auto;
         img{
-            width: 8.5rem;
-            height: 8.5rem;
+            width: 9.5rem;
+            height: 9.5rem;
             justify-self: center;
 
             body.dark &{
