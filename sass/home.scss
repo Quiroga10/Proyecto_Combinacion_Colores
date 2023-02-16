@@ -1,0 +1,34 @@
+@import "../sass/globales.scss";
+
+.header-container{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    .fa-regular{
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+        .user{
+            font-weight: 300;
+            font-size:1rem;
+            line-height: 1.3rem;
+        }
+    }
+    .button-home{
+        width: 6.2rem;
+        height: 3.1rem;
+        justify-self: end;
+    }
+}
+main{
+    section{
+        form{
+            input{
+                background: #fff url("../icons/search-outline.svg");
+            }
+        }
+    }
+}

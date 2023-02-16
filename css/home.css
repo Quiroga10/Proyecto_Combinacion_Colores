@@ -133,4 +133,32 @@ body.dark .logo {
   border-radius: 40rem;
 }
 
-/*# sourceMappingURL=globales.css.map */
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.header-container .fa-regular {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.header-container .fa-regular .user {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+.header-container .button-home {
+  width: 6.2rem;
+  height: 3.1rem;
+  justify-self: end;
+}
+
+main section form input {
+  background: #fff url("../icons/search-outline.svg");
+}
+
+/*# sourceMappingURL=home.css.map */

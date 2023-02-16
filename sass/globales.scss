@@ -127,3 +127,14 @@ form{
         margin-bottom: 3rem;
     }
 }
+.logo{
+    width: 9.5rem;
+    height: 9.5rem;
+    justify-self: center;
+    margin-bottom: 2rem;
+
+    body.dark &{
+        background-color:$light;
+        border-radius:40rem;
+    }
+}

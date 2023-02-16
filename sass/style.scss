@@ -9,17 +9,6 @@ main{
         width:30rem;
         display:grid;
         grid-template-rows: auto 1fr auto;
-        img{
-            width: 9.5rem;
-            height: 9.5rem;
-            justify-self: center;
-            margin-bottom: 2rem;
-
-            body.dark &{
-                background-color:$light;
-                border-radius:40rem;
-            }
-        }
     }
     .redes-container{
         display: flex;
