@@ -4,6 +4,7 @@
     display:grid;
     grid-template-columns: 1fr 2fr 1fr;
     .fa-regular{
+        height: 3rem;
         display: flex;
         flex-direction: column;
         font-weight: 400;
@@ -12,6 +13,8 @@
         gap: 1rem;
         text-align: center;
         .user{
+            width: 4.7rem;
+            height: 0.4rem;
             font-weight: 300;
             font-size:1rem;
             line-height: 1.3rem;
@@ -24,10 +27,96 @@
     }
 }
 main{
-    section{
+    .container-search{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
         form{
             input{
-                background: #fff url("../icons/search-outline.svg");
+                width: 28rem;
+                background: #fff url("../icons/search-outline.svg")
+                no-repeat 0.9rem center;
+                text-align: center;
+            }
+        }
+    }
+    .container-levels{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap:2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        div{
+            width: 7.4rem;
+            height: 2.7rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+            padding: 0.5rem;
+        }
+        div:nth-child(1){
+            background: #BAE4F5;
+            box-shadow: 0px 4px 4px rgba(91, 203, 203, 0.25);
+        }
+        div:nth-child(2){
+            background: #EFEFEF;
+            box-shadow: 0px 4px 4px #F3C03C;
+        }
+        div:nth-child(3){
+            background: #EFEFEF;
+            box-shadow: 0px 4px 4px #992D2D;
+        }
+    }
+    .container-colors{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        width: 22.7rem;
+        height:auto;
+        margin: 0 auto;
+        padding: 2rem;
+        gap: 0.5rem;
+        background: #EDE8E8;
+        border-radius: 2.1rem;
+        .primary-color{
+            width: 4rem;
+            height: 4rem;
+            border-radius:50%;
+            background-color: #992D2D;
+            margin: auto;
+        }
+    }
+    .container-result{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+        margin-top: 4rem;
+        .result-color{
+            width: 9rem;
+            height: 9rem;
+            border-radius: 50%;
+            background-color: #ffffff;
+            border: 0.1rem solid #000000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .opcion-container{
+            display: inherit;
+            flex-direction: column;
+            gap: 1rem;
+            .opcion-color{
+                display: inherit;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+                .card{
+                    width: 77px;
+                    height: 35px;
+                    background-color:#D9D9D9;
+                    border-radius: 7px;
+                }
             }
         }
     }

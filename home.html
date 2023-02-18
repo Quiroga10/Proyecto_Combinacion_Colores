@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <body>
     <header class="header-container">
         <i class="fa-regular fa-user">
-            <p class="user">Juan Ramirez</p>
+            <a class="user">Juan Ramirez</a>
         </i>
         <img class="logo" src="./img/logo.png" alt="">
         <button class="button-switch button-home" id="switch">
@@ -24,10 +24,56 @@
         </button>
     </header>
     <main>
-        <section>
+        <section class="container-search">
             <form action="#">
-                <input type="text" name="search" placeholder="Busca tu musico favorito" autocomplete="off">
+                <input type="text" name="search" placeholder="Busca tu color" autocomplete="off">
             </form>
+            <i class="fa-solid fa-filter"></i>
+        </section>
+        <section class="container-levels">
+            <div>
+                <a>Básico</a>
+            </div>
+            <div>
+                <a>Intermedio</a>
+            </div>
+            <div>
+                <a>Avanzado</a>
+            </div>
+        </section>
+        <section class="container-colors">
+            <div class="primary-color"></div>
+            <div class="primary-color"></div>
+            <div class="primary-color"></div>
+            <div class="primary-color"></div>
+            <div class="primary-color"></div>
+            <div class="primary-color"></div>
+            <div class="primary-color"></div>
+            <div class="primary-color"></div>
+            <div class="primary-color"></div>
+            <div class="primary-color"></div>
+            <div class="primary-color"></div>
+            <div class="primary-color"></div>
+        </section>
+        <section class="container-result">
+            <div class="result-color"></div>
+            <div class="opcion-container">
+                <section class="opcion-color">
+                    <p>Color 1: </p>
+                    <div class="card card-color1"></div>
+                    <button>Editar</button>
+                </section>
+                <section class="opcion-color">
+                    <p>Color 2: </p>
+                    <div class="card card-color2"></div>
+                    <button>Editar</button>
+                </section>
+                <section class="opcion-color">
+                    <p>Color 3: </p>
+                    <div class="card card-color3"></div>
+                    <button>Editar</button>
+                </section>
+            </div>
         </section>
     </main>
     <script src="./js/index.js"></script>
