@@ -10,6 +10,6 @@ btnSwitch.addEventListener('click', () => {
 function registrar(){
     window.location.href = "../registrarse.html";
 }
-function aceptarRegistro() {
-    window.location.href = "home.html";
+function aceptarRegistro(){
+    window.location.href = "../home.html";
 }
