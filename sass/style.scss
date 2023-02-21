@@ -43,4 +43,7 @@ h1{
     font-weight:900;
     font-size:2rem;
     line-height: 2.5rem;
+    body.dark &{
+        color:$light;
+    }
 }

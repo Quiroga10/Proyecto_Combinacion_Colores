@@ -20,7 +20,6 @@ body {
 }
 body.dark {
   background-color: #032D45;
-  color: white;
 }
 
 header {
@@ -77,6 +76,9 @@ form label {
   font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 0.4rem;
+}
+body.dark form label {
+  color: white;
 }
 form input {
   background-color: #FFFDFD;
@@ -177,6 +179,9 @@ h1 {
   font-weight: 900;
   font-size: 2rem;
   line-height: 2.5rem;
+}
+body.dark h1 {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

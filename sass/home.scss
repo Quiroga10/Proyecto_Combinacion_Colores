@@ -1,5 +1,7 @@
 @import "../sass/globales.scss";
-
+.body-home{
+    position:static;
+}
 .header-container{
     display:grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -12,6 +14,9 @@
         align-items: center;
         gap: 1rem;
         text-align: center;
+        body.dark &{
+            color:$light;
+        }
         .user{
             width: 4.7rem;
             height: 0.4rem;
@@ -38,6 +43,11 @@ main{
                 background: #fff url("../icons/search-outline.svg")
                 no-repeat 0.9rem center;
                 text-align: center;
+            }
+        }
+        .fa-solid{
+            body.dark &{
+                color:$light;
             }
         }
     }
@@ -72,22 +82,23 @@ main{
     .container-colors{
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(3,1fr);
-        width: 23.7rem;
+        grid-template-rows: repeat(3,5rem);
+        width: 28.7rem;
         height:auto;
         margin: 0 auto;
         padding: 2rem;
         gap: 1.2rem;
         background: #EDE8E8;
         border-radius: 2.1rem;
-        .primary-color{
+        .container-color{
             width: 4rem;
             height: 4rem;
             border-radius:50%;
-            background-color: #992D2D;
             margin: auto;
+            background: #992D2D ;
             p{
-                margin: 4rem 2rem 1rem 1rem;
+                text-align: center;
+                margin-top: 4.2rem;
             }
         }
     }
@@ -115,6 +126,9 @@ main{
                 flex-direction: row;
                 align-items: center;
                 gap: 1rem;
+                body.dark &{
+                    color:$light;
+                }
                 .card{
                     width: 77px;
                     height: 35px;
