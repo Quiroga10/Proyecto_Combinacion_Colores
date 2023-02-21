@@ -128,10 +128,12 @@ body.dark a:hover {
   width: 18rem;
   margin: 0 auto;
 }
-.container-button .primary-button {
+
+.primary-button {
   background-color: #5BCBCB;
 }
-.container-button .primary-button, .container-button .secondary-button {
+
+.primary-button, .secondary-button {
   border-radius: 0.8rem;
   border: none;
   width: 100%;
@@ -142,10 +144,12 @@ body.dark a:hover {
   color: white;
   box-shadow: 0px 4px 4px rgba(183, 164, 164, 0.25);
 }
-.container-button .secondary-color {
+
+.secondary-color {
   background: #CB5B5B;
 }
-.container-button .login-button {
+
+.login-button {
   margin-top: 1.4rem;
   margin-bottom: 1rem;
 }
