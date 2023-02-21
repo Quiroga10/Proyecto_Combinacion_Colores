@@ -11,6 +11,6 @@ function registrar(){
     window.location.href = "../registrarse.html";
 }
 
-function aceptarRegistro(){
+function accesoHome(){
     window.location.href = "../home.html";
 }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -67,63 +68,6 @@ header .button-switch span {
   color: white;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-form label {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-bottom: 0.4rem;
-}
-body.dark form label {
-  color: white;
-}
-form input {
-  background-color: #FFFDFD;
-  border: 1px solid #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(126, 120, 120, 0.25);
-  border-radius: 2rem;
-  height: 3rem;
-  font-size: 1.6rem;
-  padding: 0.6rem;
-  margin-bottom: 1.2rem;
-}
-form .input-name, form .input-surnames, form .input-email, form .input-password {
-  margin-bottom: 2rem;
-  caret-color: #5BCBCB;
-}
-form a {
-  color: #757875;
-  font-size: 1.4rem;
-  text-align: center;
-  text-decoration: none;
-  margin-bottom: 2rem;
-}
-body.dark form a:hover {
-  color: white;
-}
-form .primary-button, form .secondary-button {
-  background-color: #5BCBCB;
-  border-radius: 0.8rem;
-  box-shadow: 0px 4px 4px rgba(183, 164, 164, 0.25);
-  border: none;
-  color: white;
-  width: 100%;
-  cursor: pointer;
-  font-size: 1.6rem;
-  font-weight: bold;
-  height: 5rem;
-}
-form .secondary-color {
-  background: #CB5B5B;
-}
-form .login-button {
-  margin-top: 1.4rem;
-  margin-bottom: 3rem;
-}
-
 .logo {
   width: 9.5rem;
   height: 9.5rem;
@@ -133,6 +77,77 @@ form .login-button {
 body.dark .logo {
   background-color: white;
   border-radius: 40rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+body.dark label {
+  color: white;
+}
+
+input {
+  background-color: #FFFDFD;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(126, 120, 120, 0.25);
+  border-radius: 2rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.input-name, .input-surnames, .input-email, .input-password {
+  margin-bottom: 2rem;
+  caret-color: #5BCBCB;
+}
+
+a {
+  font-size: 1.4rem;
+  color: #757875;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+body.dark a:hover {
+  color: white;
+}
+
+.container-button {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  margin: 0 auto;
+}
+.container-button .primary-button {
+  background-color: #5BCBCB;
+}
+.container-button .primary-button, .container-button .secondary-button {
+  border-radius: 0.8rem;
+  border: none;
+  width: 100%;
+  height: 5rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(183, 164, 164, 0.25);
+}
+.container-button .secondary-color {
+  background: #CB5B5B;
+}
+.container-button .login-button {
+  margin-top: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 main {
