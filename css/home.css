@@ -23,8 +23,13 @@ body.dark {
   background-color: #032D45;
 }
 
+.body-home {
+  position: initial;
+}
+
 header {
-  margin: 2rem 1rem 0 0;
+  margin: 2rem 0.5rem 0 0;
+  height: 3rem;
 }
 header .button-switch {
   background-color: #032D45;
@@ -69,14 +74,15 @@ header .button-switch span {
 }
 
 .logo {
-  width: 9.5rem;
-  height: 9.5rem;
+  width: 7.5rem;
+  height: 7.5rem;
   justify-self: center;
   margin-bottom: 2rem;
+  margin-top: -3rem;
 }
 body.dark .logo {
   background-color: white;
-  border-radius: 40rem;
+  border-radius: 5rem;
 }
 
 form {
@@ -154,13 +160,11 @@ body.dark a:hover {
   margin-bottom: 1rem;
 }
 
-.body-home {
-  position: initial;
-}
-
 .header-container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .header-container .fa-regular {
   height: 3rem;
@@ -301,7 +305,8 @@ main .container-save-colors {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 main .container-save-colors button {
   width: 63px;

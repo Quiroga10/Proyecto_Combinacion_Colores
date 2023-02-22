@@ -23,8 +23,13 @@ body.dark {
   background-color: #032D45;
 }
 
+.body-home {
+  position: initial;
+}
+
 header {
-  margin: 2rem 1rem 0 0;
+  margin: 2rem 0.5rem 0 0;
+  height: 3rem;
 }
 header .button-switch {
   background-color: #032D45;
@@ -69,14 +74,15 @@ header .button-switch span {
 }
 
 .logo {
-  width: 9.5rem;
-  height: 9.5rem;
+  width: 7.5rem;
+  height: 7.5rem;
   justify-self: center;
   margin-bottom: 2rem;
+  margin-top: -3rem;
 }
 body.dark .logo {
   background-color: white;
-  border-radius: 40rem;
+  border-radius: 5rem;
 }
 
 form {

@@ -1,10 +1,9 @@
 @import "../sass/globales.scss";
-.body-home{
-    position: initial;
-}
 .header-container{
     display:grid;
     grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     .fa-regular{
         height: 3rem;
         display: flex;
@@ -150,7 +149,8 @@ main{
         display:flex;
         justify-content: space-evenly;
         align-items: center;
-        margin-top: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         button{
             width: 63px;
             height: 23px;
