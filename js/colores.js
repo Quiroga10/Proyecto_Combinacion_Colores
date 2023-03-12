@@ -7,5 +7,5 @@ const g = ((red >> 8) & 0xff) + ((pink >> 8) & 0xff);
 const b = (red & 0xff) + (pink & 0xff);
 const colorPromedio = ((r / 2) << 16) | ((g / 2) << 8) | (b / 2);
 
-const combinado = document.getElementById("combinado");
-combinado.style.backgroundColor = "#" + colorPromedio.toString(16).padStart(6, '0');
+const resultado = document.getElementById("resultado");
+resultado.style.backgroundColor = "#" + colorPromedio.toString(16).padStart(6, '0');

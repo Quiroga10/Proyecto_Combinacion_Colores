@@ -1,0 +1,28 @@
+{
+    "colors": [
+    {
+        "name": "Rojo",
+        "code": "#FF0000"
+    },
+    {
+        "name": "Verde",
+        "code": "#00FF00"
+    },
+    {
+        "name": "Azul",
+        "code": "#0000FF"
+    },
+    {
+        "name": "Amarillo",
+        "code": "#FFFF00"
+    },
+    {
+        "name": "Magenta",
+        "code": "#FF00FF"
+    },
+    {
+        "name": "Cyan",
+        "code": "#00FFFF"
+    }
+    ]
+}

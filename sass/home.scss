@@ -89,16 +89,51 @@ main{
         gap: 1.2rem;
         background: #EDE8E8;
         border-radius: 2.1rem;
-        .container-color{
+        .selected-color{
             width: 4rem;
             height: 4rem;
             border-radius:50%;
             margin: auto;
-            background: #992D2D ;
             p{
                 text-align: center;
                 margin-top: 4.2rem;
             }
+        }
+        .indianRed{
+            background-color:#CD5C5C;
+        }
+        .lightCoral{
+            background-color:#F08080;
+        }
+        .salmon{
+            background-color:#FA8072;
+        }
+        .darkSalmon{
+            background-color:#E9967A;
+        }
+        .lightSalmon{
+            background-color:#FFA07A;
+        }
+        .crimson{
+            background-color:#DC143C;
+        }
+        .red{
+            background-color:#FF0000;
+        }
+        .fireBrick{
+            background-color:#B22222 ;
+        }
+        .darkRed{
+            background-color:#8B0000;
+        }
+        .pink{
+            background-color:#FFC0CB;
+        }
+        .lightPink{
+            background-color:#FFB6C1;
+        }
+        .hotPink{
+            background-color:#FF69B4;
         }
     }
     .container-result{

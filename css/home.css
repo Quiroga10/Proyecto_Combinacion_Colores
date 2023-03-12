@@ -246,16 +246,51 @@ main .container-colors {
   background: #EDE8E8;
   border-radius: 2.1rem;
 }
-main .container-colors .container-color {
+main .container-colors .selected-color {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   margin: auto;
-  background: #992D2D;
 }
-main .container-colors .container-color p {
+main .container-colors .selected-color p {
   text-align: center;
   margin-top: 4.2rem;
+}
+main .container-colors .indianRed {
+  background-color: #CD5C5C;
+}
+main .container-colors .lightCoral {
+  background-color: #F08080;
+}
+main .container-colors .salmon {
+  background-color: #FA8072;
+}
+main .container-colors .darkSalmon {
+  background-color: #E9967A;
+}
+main .container-colors .lightSalmon {
+  background-color: #FFA07A;
+}
+main .container-colors .crimson {
+  background-color: #DC143C;
+}
+main .container-colors .red {
+  background-color: #FF0000;
+}
+main .container-colors .fireBrick {
+  background-color: #B22222;
+}
+main .container-colors .darkRed {
+  background-color: #8B0000;
+}
+main .container-colors .pink {
+  background-color: #FFC0CB;
+}
+main .container-colors .lightPink {
+  background-color: #FFB6C1;
+}
+main .container-colors .hotPink {
+  background-color: #FF69B4;
 }
 main .container-result {
   display: flex;
