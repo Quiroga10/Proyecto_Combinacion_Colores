@@ -1,3 +1,4 @@
+@use 'mixins';
 @import "../sass/globales.scss";
 .header-container{
     display:grid;
@@ -151,6 +152,9 @@ main{
             border: 0.1rem solid #000000;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
+        .result-color.dark &{
+            background-color: #ffffff;
+        }
         .opcion-container{
             display: inherit;
             flex-direction: column;
@@ -170,12 +174,25 @@ main{
                     border-radius: 7px;
                 }
                 button{
-                    width: 6.1rem;
-                    height: 2rem;
-                    border:none;
-                    border-radius: 0.6rem;
-                    color: #FFFFFF;
+                    @include mixins.button-opciones;
                     background: #175F94;
+                }
+            }
+            .botones-operaciones{
+                display: flex;
+                width: 20.9rem;
+                justify-content: space-evenly;
+                .opcion-combinacion-colores{
+                    button{
+                        @include mixins.button-opciones;
+                        background: #17948f;
+                    }
+                }
+                .opcion-reiniciar{
+                    button{
+                        @include mixins.button-opciones;
+                        background-color: #57485c;
+                    }
                 }
             }
         }

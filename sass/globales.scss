@@ -24,7 +24,13 @@ body{
     }
 }
 .body-home{
-    position: initial;
+    font-family:'Roboto', sans-serif;
+    background-color: $light;
+    @include mixins.no-scroll;
+
+    &.dark{
+        background-color:$dark;
+    }
 }
 header{
     margin:2rem 0.5rem 0 0;

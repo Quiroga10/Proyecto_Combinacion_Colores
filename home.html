@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Combinación de colores"
     <script src="https://kit.fontawesome.com/9d0ecd6d4d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/home.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js" onload="console.log('chroma.js loaded successfully')"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js" onload="console.log('chroma.js loaded successfully')"></script>
     <title>home</title>
 </head>
 <body class="body-home">
@@ -16,8 +17,8 @@
                 Juan Ramirez
             </a>
         </i>
-        <img class="logo" src="./img/logo.png" alt="">
-        <button type="button" class="button-switch button-home" id="switch">
+        <img class="logo" src="./img/logo.png" alt="logo empresa">
+        <button class="button-switch" id="switch">
             <span>
                 <i class="fa fa-sun"></i>
             </span>
@@ -31,7 +32,7 @@
             <form action="#">
                 <input type="text" name="search" placeholder="Busca tu color" autocomplete="off">
             </form>
-            <i class="fa-solid fa-filter"></i>
+            <i class="fa-sharp fa-solid fa-filter" style="color: #000000;"></i>
         </section>
         <section class="container-levels">
             <div>
@@ -45,19 +46,19 @@
             </div>
         </section>
         <section class="container-colors">
-            <div class="selected-color indianRed" id="indian_Red">
+            <div class="selected-color indianRed">
                 <p>IndianRed</p>
             </div>
-            <div class="selected-color lightCoral" id="light_Coral">
+            <div class="selected-color lightCoral">
                 <p>LightCoral</p>
             </div>
-            <div class="selected-color salmon" id="selected-salmon">
+            <div class="selected-color salmon">
                 <p>Salmon</p>
             </div>
-            <div class="selected-color darkSalmon" id="selected-darkSalmon">
+            <div class="selected-color darkSalmon">
                 <p>DarkSalmon</p>
             </div>
-            <div class="selected-color lightSalmon" id="selected-lightSalmon">
+            <div class="selected-color lightSalmon">
                 <p>LightSalmon</p>
             </div>
             <div class="selected-color crimson">
@@ -88,16 +89,21 @@
                 <section class="opcion-color">
                     <p>Color 1: </p>
                     <div class="card card-color1"></div>
-                    <button>Editar</button>
+                    <button class="editar-color" data-target="color1">Editar</button>
                 </section>
                 <section class="opcion-color">
                     <p>Color 2: </p>
                     <div class="card card-color2"></div>
-                    <button>Editar</button>
+                    <button class="editar-color" data-target="color2">Editar</button>
                 </section>
-                <section class="opcion-color">
-                    <button id="combinar">Combinar</button>
-                </section>
+                <div class="botones-operaciones">
+                    <section class="opcion-combinacion-colores">
+                        <button id="combinar">Combinar</button>
+                    </section>
+                    <section class="opcion-reiniciar">
+                        <button id="reiniciar">Reiniciar</button>
+                    </section>
+                </div>
             </div>
         </section>
         <section class="container-save-colors">
@@ -115,5 +121,6 @@
     </main>
     <script src="./js/index.js"></script>
     <script src="./js/colores.js"></script>
+    <script src="./js/busqueda_colores.js"></script>
 </body>
 </html>

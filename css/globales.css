@@ -24,7 +24,17 @@ body.dark {
 }
 
 .body-home {
-  position: initial;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  transition: 0.3s ease all;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.body-home.dark {
+  background-color: #032D45;
 }
 
 header {
